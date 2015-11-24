@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>H&eacute;ra Monitoring</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Héra Monitoring is a Dockerized ELK, Sensu and Graphite/Grafana Monitoring Stack">
+    <meta name="author" content="Nuance Mobility DevOps">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+    <div class="container-narrow">
+
+      <div id="update-notification" class="alert">
+        <strong>Warning: </strong>A new dashboards version is available!
+        <button type="button" class="btn btn-small btn-warning">Update</button>
+      </div>
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a id="status-link" href="#">Status</a></li>
+        </ul>
+        <h3 class="muted">H&eacute;ra Monitoring</h3>
+      </div>
+
+      <hr>
+
+      <div class="row-fluid">
+        <ul class="thumbnails">
+          <li class="span4">
+            <a href="grafana/" class="thumbnail">
+              <img data-src="holder.js/300x200" src="img/grafana.png" alt="Grafana" style="height: 120px;"/>
+              <div class="caption">
+                <hr/>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              </div>
+            </a>
+          </li>
+          <li class="span4">
+            <a href="kibana/" class="thumbnail">
+              <img data-src="holder.js/300x200" src="img/kibana.png" style="height: 120px;"/>
+              <div class="caption">
+                <hr/>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              </div>
+            </a>
+          </li>
+          <li class="span4">
+            <a href="uchiwa/" class="thumbnail">
+              <img data-src="holder.js/300x200" src="img/sensu.png" alt="Sensu" style="height: 120px;"/>
+              <div class="caption">
+                <hr/>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <hr>
+
+      <div class="footer">
+        <p>&copy; Nuance Mobility 2015</p>
+      </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
