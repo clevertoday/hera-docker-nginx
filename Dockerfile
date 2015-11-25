@@ -2,7 +2,7 @@ FROM 				ubuntu:14.04
 MAINTAINER 	Brice Argenson <brice@clevertoday.com>
 
 RUN 				apt-get update -y && \
-						apt-get install -y libxml2-dev libxslt-dev gcc git libssl-dev make libldap2-dev && \
+						apt-get install -y curl tar libxml2-dev libxslt-dev gcc git libssl-dev make libldap2-dev && \
 						cd /tmp && \
 						curl -O http://nginx.org/download/nginx-1.6.0.tar.gz && \
 						tar -xf nginx-1.6.0.tar.gz && \
