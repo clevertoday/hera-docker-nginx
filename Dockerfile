@@ -8,10 +8,10 @@ RUN 				apt-get update -y && \
 						tar -xf nginx-1.6.0.tar.gz && \
 						rm nginx-1.6.0.tar.gz && \
 						mv nginx-1.6.0 nginx_src && \
-						curl -O http://colocrossing.dl.sourceforge.net/project/pcre/pcre/8.21/pcre-8.21.tar.gz && \
+						curl -O http://skylineservers.dl.sourceforge.net/project/pcre/pcre/8.21/pcre-8.21.tar.gz && \
 						tar -xzf pcre-8.21.tar.gz && \
 						rm pcre-8.21.tar.gz && \
-						curl -O http://garr.dl.sourceforge.net/project/libpng/zlib/1.2.5/zlib-1.2.5.tar.gz && \
+						curl -O http://zlib.net/fossils/zlib-1.2.5.tar.gz && \
 						tar -xzf zlib-1.2.5.tar.gz && \
 						rm zlib-1.2.5.tar.gz && \
 						git clone https://github.com/kvspb/nginx-auth-ldap.git && \
