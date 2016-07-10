@@ -12,6 +12,8 @@ function setConfiguration() {
 
 if [ -n "${GRAFANA_HOST+1}" ]; then
   setConfiguration "GRAFANA_HOST" "$GRAFANA_HOST"
+else
+  setConfiguration "GRAFANA_HOST" "grafana"
 fi
 
 if [ -n "${GRAFANA_PORT+1}" ]; then
@@ -23,6 +25,8 @@ fi
 
 if [ -n "${GRAPHITE_HOST+1}" ]; then
   setConfiguration "GRAPHITE_HOST" "$GRAPHITE_HOST"
+else
+  setConfiguration "GRAPHITE_HOST" "graphite"
 fi
 
 if [ -n "${GRAPHITE_PORT+1}" ]; then
@@ -34,6 +38,8 @@ fi
 
 if [ -n "${ES_HOST+1}" ]; then
   setConfiguration "ES_HOST" "$ES_HOST"
+else 
+  setConfiguration "ES_HOST" "graphite"
 fi
 
 if [ -n "${ES_PORT+1}" ]; then
