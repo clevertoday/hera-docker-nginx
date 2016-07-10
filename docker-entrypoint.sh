@@ -52,7 +52,7 @@ fi
 if [ -n "${ES_HOST+1}" ]; then
   setConfiguration "ES_HOST" "$ES_HOST"
 else 
-  setConfiguration "ES_HOST" "graphite"
+  setConfiguration "ES_HOST" "elasticsearch"
 fi
 
 if [ -n "${ES_PORT+1}" ]; then
