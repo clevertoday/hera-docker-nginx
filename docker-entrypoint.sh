@@ -23,6 +23,19 @@ else
 fi
 
 
+if [ -n "${KIBANA_HOST+1}" ]; then
+  setConfiguration "KIBANA_HOST" "$KIBANA_HOST"
+else
+  setConfiguration "KIBANA_HOST" "kibana"
+fi
+
+if [ -n "${GRAFANA_PORT+1}" ]; then
+  setConfiguration "GRAFANA_PORT" "$GRAFANA_PORT"
+else
+  setConfiguration "GRAFANA_PORT" "80"
+fi
+
+
 if [ -n "${GRAPHITE_HOST+1}" ]; then
   setConfiguration "GRAPHITE_HOST" "$GRAPHITE_HOST"
 else
