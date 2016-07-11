@@ -19,7 +19,7 @@ fi
 if [ -n "${GRAFANA_PORT+1}" ]; then
   setConfiguration "GRAFANA_PORT" "$GRAFANA_PORT"
 else
-  setConfiguration "GRAFANA_PORT" "80"
+  setConfiguration "GRAFANA_PORT" "3000"
 fi
 
 
@@ -32,7 +32,7 @@ fi
 if [ -n "${KIBANA_PORT+1}" ]; then
   setConfiguration "KIBANA_PORT" "$KIBANA_PORT"
 else
-  setConfiguration "KIBANA_PORT" "80"
+  setConfiguration "KIBANA_PORT" "5601"
 fi
 
 
