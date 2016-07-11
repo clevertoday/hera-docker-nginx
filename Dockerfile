@@ -7,6 +7,6 @@ COPY				html /usr/share/nginx/html
 COPY 			  tls /etc/nginx/tls
 COPY 				config/nginx.conf /etc/nginx/nginx.conf
 
-EXPOSE 			80
+EXPOSE 			80 443
 
 ENTRYPOINT  ["/docker-entrypoint.sh"]
